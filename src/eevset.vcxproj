@@ -140,9 +140,11 @@
   <ItemGroup>
     <ClCompile Include="eevset.cpp" />
     <ClCompile Include="utils\Utils.cpp" />
+    <ClCompile Include="settings\Settings.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\Utils.h" />
+    <ClInclude Include="settings\Settings.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
