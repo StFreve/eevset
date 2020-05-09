@@ -138,11 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="arguments\Arguments.cpp" />
     <ClCompile Include="eevset.cpp" />
     <ClCompile Include="utils\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="utils\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="arguments\Arguments.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
