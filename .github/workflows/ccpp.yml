@@ -2,9 +2,13 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+    - master
+    - 'development/*'
   pull_request:
-    branches: [ master ]
+    branches: 
+    - master
+    - 'development/*'
 
 jobs:
   build:
@@ -12,6 +16,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout sources
+      uses: actions/checkout@v2
+
+    - name: Checkout submodules
+      uses: srt32/git-actions@v0.0.3
+      with:
+        args: git submodule update --init --recursive
+      
     - name: make
-      run: make
+      run: |
+        mkdir build && cd build
+        cmake ..
+        make
+
