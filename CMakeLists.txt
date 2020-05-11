@@ -20,6 +20,7 @@ set(CMAKE_CXX_STANDARD_REQURED True)
 ########################################
 add_executable(eevset ${PROJECT_SOURCE_DIR}/src/eevset.cpp)
 
+target_include_directories(eevset PUBLIC "${PROJECT_SOURCE_DIR}/src")
 ########################################
 # Testing
 ########################################
@@ -53,7 +54,8 @@ target_link_libraries(unit_test gtest gtest_main)
 ########################################
 # Extra linking for the project.
 ########################################
-# target_link_libraries(unit_test project1_lib)
+#target_link_libraries(unit_test ${PROJECT_NAME})
+target_include_directories(unit_test PUBLIC "${PROJECT_SOURCE_DIR}/src")
 
 # This is so you can do 'make test' to see all your tests run, instead of
 # manually running the executable runUnitTests to see those specific tests.
