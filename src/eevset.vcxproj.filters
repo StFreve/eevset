@@ -29,7 +29,13 @@
     <ClInclude Include="utils\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-     <ClInclude Include="arguments\Arguments.h">
+    <ClInclude Include="arguments\Arguments.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="arguments\ArgumentInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\lexical_cast.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -10,5 +10,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="unit_test.cpp" />
+    <ClCompile Include="UtilsUnitTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
