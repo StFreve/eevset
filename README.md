@@ -7,7 +7,7 @@ Extended Environment Variables Setter
 
 Dependencies:
 
- - **GoogleTest** - used as unit test framework [libsdl](https://github.com/google/googletest)
+ - [**GoogleTest**](https://github.com/google/googletest) - used as unit tests' framework
 
 **Linux and Mac OS**
 
