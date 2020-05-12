@@ -266,3 +266,4 @@ __pycache__/
 
 # VS Code workspace
 *.code-workspace
+*.clang-format
